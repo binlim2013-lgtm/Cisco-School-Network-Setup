@@ -1,0 +1,24 @@
+Device	        Interface	    IPv6 Address	                    Default Gateway
+Instructor(L2)	FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC1_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC2_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC3_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC4_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC5_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC6_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC7_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC8_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC9_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC10_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC11_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC12_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC13_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC14_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC15_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC16_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC17_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC18_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC19_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC20_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC21_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
+PC22_Lab2	      FastEthernet0	2026:A3F9:C21E:2:DHCPv6 assigned	FE80:2::1
