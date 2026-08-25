@@ -1,0 +1,25 @@
+Main_Router>en
+Main_Router# conf t
+Main_Router(config)#ipv6 dhcp pool STATEFUL_7
+Main_Router(config-dhcpv6)#address prefix 2026:A3F9:C21E:7::1/64
+Main_Router(config-dhcpv6)#dns-server 2026:A3F9:C21E:7::100
+Main_Router(config-dhcpv6)#domain-name FIST_Main.com
+Main_Router(config-dhcpv6)#exit
+
+Main_Router(config)#ipv6 dhcp pool STATEFUL_8
+Main_Router(config-dhcpv6)#address prefix 2026:A3F9:C21E:8::1/64
+Main_Router(config-dhcpv6)#dns-server 2026:A3F9:C21E:7::100
+Main_Router(config-dhcpv6)#domain-name FIST_Main.com
+Main_Router(config-dhcpv6)#exit
+
+Main_Router(config)#int g0/0/0
+Main_Router(config-if)#ipv6 nd managed-config-flag
+Main_Router(config-if)#ipv6 dhcp server STATEFUL_7
+Main_Router(config-if)#exit
+
+Main_Router(config)#int g0/0/1
+Main_Router(config-if)#ipv6 nd managed-config-flag
+Main_Router(config-if)#ipv6 dhcp server STATEFUL_8
+Main_Router(config-if)#exit
+Main_Router(config)#exit
+Main_Router#copy run start
