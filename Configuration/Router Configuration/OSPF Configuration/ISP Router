@@ -1,0 +1,17 @@
+ISP_Router>en
+ISP_Router# conf t
+ISP_Router(config)#ipv6 router ospf 10
+ISP_Router(config-rtr)#router-id 4.4.4.4
+ISP_Router(config-rtr)#exit
+
+ISP_Router(config)#int g0/0/0
+ISP_Router(config-if)#ipv6 ospf 10 area 0
+ISP_Router(config-if)#no shut
+ISP_Router(config-if)#exit
+
+ISP_Router(config)#int s0/1/0
+ISP_Router(config-if)#ipv6 ospf 10 area 0
+ISP_Router(config-if)#no shut
+ISP_Router(config-if)#exit
+ISP_Router(config)#exit
+ISP_Router#copy run start
