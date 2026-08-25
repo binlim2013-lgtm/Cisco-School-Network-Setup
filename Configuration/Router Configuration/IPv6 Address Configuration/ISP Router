@@ -1,0 +1,18 @@
+Router>enable
+Router#config terminal
+Router (config)#hostname ISP_Router
+ISP_Router(config)#ipv6 unicast-routing
+
+ISP_Router(config)#interface g0/0/0
+ISP_Router(config-if)# ipv6 address 2026:A3F9:C21E:12::1/64
+ISP_Router(config-if)# ipv6 address FE80:12::1 link-local
+ISP_Router(config-if)# :no shut
+ISP_Router(config-if)# exit
+
+ISP_Router(config)# interface s0/1/0
+ISP_Router(config-if)# ipv6 address 2026:A3F9:C21E:11::2/64
+ISP_Router(config-if)# ipv6 address FE80:11::2 link-local
+ISP_Router(config-if)# no shut
+ISP_Router(config-if)#exit
+ISP_Router(config)#exit
+ISP_Router#copy run start
