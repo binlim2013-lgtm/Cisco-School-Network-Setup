@@ -1,0 +1,25 @@
+Lab_Router>en
+Lab_Router# conf t
+Lab_Router(config)#ipv6 dhcp pool STATEFUL_1
+Lab_Router(config-dhcpv6)#address prefix 2026:A3F9:C21E:1::1/64
+Lab_Router(config-dhcpv6)#dns-server 2026:A3F9:C21E:7::100
+Lab_Router(config-dhcpv6)#domain-name FIST_Lab.com
+Lab_Router(config-dhcpv6)#exit
+
+Lab_Router(config)#ipv6 dhcp pool STATEFUL_2
+Lab_Router(config-dhcpv6)#address prefix 2026:A3F9:C21E:2::1/64
+Lab_Router(config-dhcpv6)#dns-server 2026:A3F9:C21E:7::100
+Lab_Router(config-dhcpv6)#domain-name FIST_Lab.com
+Lab_Router(config-dhcpv6)#exit
+
+Lab_Router(config)#int g0/0/0
+Lab_Router(config-if)#ipv6 nd managed-config-flag
+Lab_Router(config-if)#ipv6 dhcp server STATEFUL_1
+Lab_Router(config-if)#exit
+
+Lab_Router(config)#int g0/0/1
+Lab_Router(config-if)#ipv6 nd managed-config-flag
+Lab_Router(config-if)#ipv6 dhcp server STATEFUL_2
+Lab_Router(config-if)#exit
+Lab_Router(config)#exit
+Lab_Router#copy run start
