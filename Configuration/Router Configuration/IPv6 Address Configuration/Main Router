@@ -1,0 +1,36 @@
+Router>enable
+Router#config terminal
+Router (config)#hostname Main_Router
+Main_Router(config)#ipv6 unicast-routing
+
+Main_Router(config)#interface g0/0/0
+Main_Router(config-if)# ipv6 address 2026:A3F9:C21E:7::1/64
+Main_Router(config-if)# ipv6 address FE80:7::1 link-local
+Main_Router(config-if)# :no shut
+Main_Router(config-if)# exit
+
+Main_Router(config)#interface g0/0/1
+Main_Router(config-if)# ipv6 address 2026:A3F9:C21E:8::1/64
+Main_Router(config-if)# ipv6 address FE80:8::1 link-local
+Main_Router(config-if)# :no shut
+Main_Router(config-if)# exit
+
+Main_Router(config)# interface s0/1/0
+Main_Router(config-if)# ipv6 address 2026:A3F9:C21E:9::1/64
+Main_Router(config-if)# ipv6 address FE80:9::1 link-local
+Main_Router(config-if)# no shut
+Main_Router(config-if)#exit
+
+Main_Router(config)# interface s0/1/1
+Main_Router(config-if)# ipv6 address 2026:A3F9:C21E:10::1/64
+Main_Router(config-if)# ipv6 address FE80:10::1 link-local
+Main_Router(config-if)# no shut
+Main_Router(config-if)#exit
+
+Main_Router(config)# interface s0/2/0
+Main_Router(config-if)# ipv6 address 2026:A3F9:C21E:11::1/64
+Main_Router(config-if)# ipv6 address FE80:11::1 link-local
+Main_Router(config-if)# no shut
+Main_Router(config-if)#exit
+Main_Router(config)#exit
+Main_Router#copy run start
