@@ -1,0 +1,25 @@
+Internal_Router>en
+Internal_Router# conf t
+Internal_Router(config)#ipv6 dhcp pool STATEFUL_4
+Internal_Router(config-dhcpv6)#address prefix 2026:A3F9:C21E:4::1/64
+Internal_Router(config-dhcpv6)#dns-server 2026:A3F9:C21E:7::100
+Internal_Router(config-dhcpv6)#domain-name FIST_Internet.com
+Internal_Router(config-dhcpv6)#exit
+
+Internal_Router(config)#ipv6 dhcp pool STATEFUL_5
+Internal_Router(config-dhcpv6)#address prefix 2026:A3F9:C21E:5::1/64
+Internal_Router(config-dhcpv6)#dns-server 2026:A3F9:C21E:7::100
+Internal_Router(config-dhcpv6)#domain-name FIST_Internet.com
+Internal_Router(config-dhcpv6)#exit
+
+Internal_Router(config)#int g0/0/0
+Internal_Router(config-if)#ipv6 nd managed-config-flag
+Internal_Router(config-if)#ipv6 dhcp server STATEFUL_4
+Internal_Router(config-if)#exit
+
+Internal_Router(config)#int g0/0/1
+Internal_Router(config-if)#ipv6 nd managed-config-flag
+Internal_Router(config-if)#ipv6 dhcp server STATEFUL_5
+Internal_Router(config-if)#exit
+Internal_Router(config)#exit
+Internal_Router#copy run start
