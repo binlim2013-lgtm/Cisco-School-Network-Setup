@@ -1,0 +1,25 @@
+Router>enable
+Router#config terminal
+Router (config)#hostname Lab_Router
+Lab_Router(config)#ipv6 unicast-routing
+
+Lab_Router(config)#interface g0/0/0
+Lab_Router(config-if)# ipv6 address 2026:A3F9:C21E:1::1/64
+Lab_Router(config-if)# ipv6 address FE80:1::1 link-local
+Lab_Router(config-if)# :no shut
+Lab_Router(config-if)# exit
+
+Lab_Router(config)#interface g0/0/1
+Lab_Router(config-if)# ipv6 address 2026:A3F9:C21E:2::1/64
+Lab_Router(config-if)# ipv6 address FE80:2::1 link-local
+Lab_Router(config-if)# :no shut
+Lab_Router(config-if)# exit
+
+Lab_Router(config)# interface s0/1/0
+Lab_Router(config-if)# ipv6 address 2026:A3F9:C21E:3::1/64
+Lab_Router(config-if)# ipv6 address FE80:3::1 link-local
+Lab_Router(config-if)# no shut
+Lab_Router(config-if)#exit
+Lab_Router(config)#exit
+Lab_Router#copy run start
+
