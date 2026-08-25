@@ -1,0 +1,22 @@
+Lab_Router>en
+Lab_Router# conf t
+Lab_Router(config)#ipv6 router ospf 10
+Lab_Router(config-rtr)#router-id 1.1.1.1
+Lab_Router(config-rtr)#exit
+
+Lab_Router(config)#int g0/0/0
+Lab_Router(config-if)#ipv6 ospf 10 area 0
+Lab_Router(config-if)#no shut
+Lab_Router(config-if)#exit
+
+Lab_Router(config)#int g0/0/1
+Lab_Router(config-if)#ipv6 ospf 10 area 0
+Lab_Router(config-if)#no shut
+Lab_Router(config-if)#exit
+
+Lab_Router(config)#int s0/1/0
+Lab_Router(config-if)#ipv6 ospf 10 area 0
+Lab_Router(config-if)#no shut
+Lab_Router(config-if)#exit
+Lab_Router(config)#exit
+Lab_Router#copy run start
