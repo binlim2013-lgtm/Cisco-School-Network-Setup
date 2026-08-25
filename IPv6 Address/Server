@@ -1,0 +1,5 @@
+Device	            Interface	IPv6 Address
+DNS Server	        FastEthernet0	2026:A3F9:C21E:7::100/64
+Internet Web Server	FastEthernet0	2026:A3F9:C21E:7::200/64
+File Server	        FastEthernet0	2026:A3F9:C21E:7::300/64
+ISP Server	        FastEthernet0	2026:A3F9:C21E:12::100/64
