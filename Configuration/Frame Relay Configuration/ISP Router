@@ -1,0 +1,8 @@
+ISP_Router>en
+ISP_Router# conf t
+ISP_Router(config)#int s0/1/0
+ISP_Router(config-if)#encapsulation frame-relay
+ISP_Router(config-if)#frame-relay map ipv6 2026:A3F9:C21E:11::1 101
+ISP_Router(config-if)#frame-relay map ipv6 FE80:11::1 101 broadcast
+ISP_Router(config)#end
+ISP_Router#copy run start
