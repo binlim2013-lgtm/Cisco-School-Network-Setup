@@ -1,0 +1,3 @@
+Device	Interface	IPv6 Address
+Laptop1	FastEthernet0	2026:A3F9:C21E:8:DHCPv6 assigned
+PC1	    FastEthernet0	2026:A3F9:C21E:8:DHCPv6 assigned
