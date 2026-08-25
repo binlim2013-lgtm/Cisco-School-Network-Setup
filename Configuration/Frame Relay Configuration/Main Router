@@ -1,0 +1,8 @@
+Main_Router>en
+Main_Router# conf t
+Main_Router(config)#int s0/2/0
+Main_Router(config-if)#encapsulation frame-relay
+Main_Router(config-if)#frame-relay map ipv6 2026:A3F9:C21E:11::2 100
+Main_Router(config-if)#frame-relay map ipv6 FE80:11::2 100 broadcast
+Main_Router(config)#end
+Main_Router#copy run start
