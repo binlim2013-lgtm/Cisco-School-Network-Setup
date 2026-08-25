@@ -1,0 +1,12 @@
+Ipv6 address:2026:A3F9:C21E:7::300/64
+Default gateway:FE80:7::1
+DNS Server:2026:A3F9:C21E:7::100
+
+Turn on HTTP and HTTPS services
+Turn off DHCPv6 service
+Turn off DNS service
+
+Turn on FTP service
+Username: admin
+Password admin123
+Select Write,Read, Delete, Rename and List and click “Add”
