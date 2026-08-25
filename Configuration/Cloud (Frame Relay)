@@ -1,0 +1,10 @@
+Go to Config
+Select Serial 0
+Add DLC 100 and Name: Main Router
+
+Select Serial 1
+Add DLC 101 and Name: ISP Router
+
+Select Frame relay
+Select Serial0 Main Router Serial 1 ISP Router
+Click Add
