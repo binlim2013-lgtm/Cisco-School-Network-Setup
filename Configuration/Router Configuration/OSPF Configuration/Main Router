@@ -1,0 +1,32 @@
+Main_Router>en
+Main_Router# conf t
+Main_Router(config)#ipv6 router ospf 10
+Main_Router(config-rtr)#router-id 3.3.3.3
+Main_Router(config-rtr)#exit
+
+Main_Router(config)#int g0/0/0
+Main_Router(config-if)#ipv6 ospf 10 area 0
+Main_Router(config-if)#no shut
+Main_Router(config-if)#exit
+
+Main_Router(config)#int g0/0/1
+Main_Router(config-if)#ipv6 ospf 10 area 0
+Main_Router(config-if)#no shut
+Main_Router(config-if)#exit
+
+Main_Router(config)#int s0/1/0
+Main_Router(config-if)#ipv6 ospf 10 area 0
+Main_Router(config-if)#no shut
+Main_Router(config-if)#exit
+
+Main_Router(config)#int s0/1/1
+Main_Router(config-if)#ipv6 ospf 10 area 0
+Main_Router(config-if)#no shut
+Main_Router(config-if)#exit
+
+Main_Router(config)#int s0/2/0
+Main_Router(config-if)#ipv6 ospf 10 area 0
+Main_Router(config-if)#no shut
+Main_Router(config-if)#exit
+Main_Router(config)#exit
+Main_Router#copy run start
