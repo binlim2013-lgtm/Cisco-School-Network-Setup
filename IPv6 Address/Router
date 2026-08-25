@@ -1,0 +1,15 @@
+Device	        Interface	            IPv6 Address
+Lab Router	    GigabitEthernet0/0/0	2026:A3F9:C21E:1::1/64
+	              GigabitEthernet0/0/1	2026:A3F9:C21E:2::1/64
+	              Serial0/1/0	          2026:A3F9:C21E:3::1/64
+Internal Router	GigabitEthernet0/0/0	2026:A3F9:C21E:4::1/64
+	              GigabitEthernet0/0/1	2026:A3F9:C21E:5::1/64
+	              Serial0/1/0	          2026:A3F9:C21E:6::1/64
+Main Router	    GigabitEthernet0/0/0	2026:A3F9:C21E:7::1/64
+	              GigabitEthernet0/0/1	2026:A3F9:C21E:8::1/64
+	              Serial0/1/0	          2026:A3F9:C21E:9::1/64
+	              Serial0/1/1	          2026:A3F9:C21E:10::1/64
+	              Serial0/2/0	          2026:A3F9:C21E:11::1/64
+ISP Router	    GigabitEthernet0/0/0	2026:A3F9:C21E:12::1/64
+	              Serial0/1/0	          2026:A3F9:C21E:11::2/64
+ 
