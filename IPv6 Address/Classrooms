@@ -1,0 +1,8 @@
+Device	  Interface	    IPv6 Address	                    Default Gateway
+PC_Class1	FastEthernet0	2026:A3F9:C21E:5:DHCPv6 assigned	FE80:5::1
+PC_Class2	FastEthernet0	2026:A3F9:C21E:5:DHCPv6 assigned	FE80:5::1
+PC_Class3	FastEthernet0	2026:A3F9:C21E:5:DHCPv6 assigned	FE80:5::1
+PC_Class4	FastEthernet0	2026:A3F9:C21E:5:DHCPv6 assigned	FE80:5::1
+PC_Class5	FastEthernet0	2026:A3F9:C21E:5:DHCPv6 assigned	FE80:5::1
+PC_Class6	FastEthernet0	2026:A3F9:C21E:5:DHCPv6 assigned	FE80:5::1
+PC_Class7	FastEthernet0	2026:A3F9:C21E:5:DHCPv6 assigned	FE80:5::1
