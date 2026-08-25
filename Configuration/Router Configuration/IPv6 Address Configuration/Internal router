@@ -1,0 +1,25 @@
+Router>enable
+Router#config terminal
+Router (config)#hostname Internal_Router
+Internal_Router(config)#ipv6 unicast-routing
+
+Internal_Router(config)#interface g0/0/0
+Internal_Router(config-if)# ipv6 address 2026:A3F9:C21E:4::1/64
+Internal_Router(config-if)# ipv6 address FE80:4::1 link-local
+Internal_Router(config-if)# :no shut
+Internal_Router(config-if)# exit
+
+Internal_Router(config)#interface g0/0/1
+Internal_Router(config-if)# ipv6 address 2026:A3F9:C21E:5::1/64
+Internal_Router(config-if)# ipv6 address FE80:5::1 link-local
+Internal_Router(config-if)# :no shut
+Internal_Router(config-if)# exit
+
+Internal_Router(config)# interface s0/1/0
+Internal_Router(config-if)# ipv6 address 2026:A3F9:C21E:6::1/64
+Internal_Router(config-if)# ipv6 address FE80:6::1 link-local
+Internal_Router(config-if)# no shut
+Internal_Router(config-if)#exit
+Internal_Router(config)#exit
+Internal_Router#copy run start
+
